@@ -11,4 +11,15 @@ In GNS3 - drag all network equipment into the project and connect all the device
 ![Screenshot 2023-11-14 at 12 32 27 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/4ee46fdc-9c6f-4364-b831-ec20d32d3f23)
 
 ## Step 2
-
+Configure the FortiGate Firewall
+- Create password
+- Configure Interface
+```
+{
+conf sys int
+      edit port2
+          set allowaccess ping http https ssh
+          set ip 10.128.0.1/24
+      end
+}
+```
