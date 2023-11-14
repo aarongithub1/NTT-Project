@@ -1,7 +1,9 @@
-# NTT-Project
+# Network Tools and Technologies Project
 This is a project where I built a small network
 
-## In GNS3 - drag network equipment into the project and connect all the devices
+# Stage 1 (Network Setup)
+
+## In GNS3 - Drag network equipment into the project area and connect all the devices
 - FortiGate (Firewall)
 - LAN Switch
 - DMZ Switch
@@ -324,3 +326,9 @@ WAN-to-DMZ policy
 ```
 
 ### Backup the firewall Config
+
+---
+
+# Stage 2 (Domain Setup)
+
+##
