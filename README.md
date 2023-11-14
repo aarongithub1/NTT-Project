@@ -50,9 +50,9 @@ conf sys dhcp server
 
 Test DHCP address assignment:
 
-'''
+```
 ipconfig /all
-'''
+```
 
 ![Windows_ipconfig](https://github.com/aarongithub1/NTT-Project/assets/31551830/84469464-3eca-4c41-9a54-d5fa24ca844d)
 
