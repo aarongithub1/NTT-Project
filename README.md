@@ -133,9 +133,9 @@ http://10.128.0.1/
 10.128.10.0/24 as the DMZ network
 ```
 
-Edit Network interfaces:
+### Edit Network interfaces:
 ```
-Edit the network interfaces under: **Network > Interfaces**
+Edit the network interfaces under: (Network > Interfaces)
 ```
 port1 WAN
 ```
@@ -184,9 +184,9 @@ edit port4
 Click "OK" to Apply the changes
 ```
 
-Enable DNS
+### Enable DNS
 ```
-Enable DNS under: **System > Feature Visibility**
+Enable DNS under: (System > Feature Visibility)
 ```
 
 ```
@@ -194,7 +194,55 @@ dns database = enabled
 Click "OK" to Apply the changes
 ```
 
-Configure the firewall system DNS
+### Configure the firewall system DNS
 ```
-Configure DNS settings under: **Network > DNS**
+Configure DNS settings under: (Network > DNS)
 ```
+
+```
+dns servers = specify
+  primary dns server = 8.8.8.8
+  secondary dns server = 1.1.1.1
+Click "OK" to Apply the changes
+```
+
+### Configure Network DNS:
+LAN DNS
+```
+Configure Network DNS settings under: (Network > DNS Servers)
+```
+
+```
+Create New
+  interface = LAN(port2)
+  mode = recursive
+Click "OK" to Apply the changes
+```
+
+GUEST DNS
+```
+Create New
+  interface = GUEST(port3)
+  mode = recursive
+Click "OK" to Apply the changes
+```
+
+DMZ DNS
+```
+Create New
+  interface = DMZ(port4)
+  mode = recursive
+Click "OK" to Apply the changes
+```
+
+### Create Service Objects
+```
+Configure Service Objects under: (Policy & Objects > Services)
+```
+LAN services
+```
+Create New > Service Group
+  name = LAN-services-group
+  members = ALL_ICMP, NTP, RDP, SSH, Web Access, Windows AD
+```
+
