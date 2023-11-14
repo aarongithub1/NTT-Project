@@ -11,9 +11,11 @@ This is a project where I built a small network
 
 ## Configure the FortiGate Firewall
 - Create password
+
 ![Screenshot 2023-11-14 at 12 39 18 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/f5cd74fa-65de-49c5-a67b-c4e8c0c03e83)
 
-- Configure Interface
+## Configure Interface
+
 ```
 conf sys int
       edit port2
@@ -21,9 +23,11 @@ conf sys int
           set ip 10.128.0.1/24
       end
 ```
+
 ![Screenshot 2023-11-14 at 12 46 15 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/e29a246d-b887-4f11-97c9-32c60729b11d)
 
 ## Configure the DHCP Server for LAN interface
+
 ```
 conf sys dhcp server
       edit 1
@@ -39,12 +43,25 @@ conf sys dhcp server
       next
   end
 ```
+
 ![Screenshot 2023-11-14 at 12 49 47 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/f1165e3d-5e8a-4391-ad88-420f16fe0f84)
 
-## Add Windows workstation (Test internet connection)
+## Add Windows workstation (Test DHCP Server / Test Connectivity)
+
+Test DHCP address assignment:
+
+'''
+ipconfig /all
+'''
+
+![Windows_ipconfig](https://github.com/aarongithub1/NTT-Project/assets/31551830/4a15db66-039e-496f-a72b-22ae2153d6ec)
+
+Test Connectivity:
+
 Ping:
 - LAN - 10.128.0.1
 - WAN - 8.8.8.8
 - DNS - google.com
+
 ![Windows_ping](https://github.com/aarongithub1/NTT-Project/assets/31551830/4bcf179e-d944-4753-aa18-7d9b7a6ada44)
 
