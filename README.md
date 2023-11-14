@@ -1,7 +1,7 @@
 # NTT-Project
 This is a project where I built a small network
 
-## In GNS3 - drag all network equipment into the project and connect all the devices
+## In GNS3 - drag network equipment into the project and connect all the devices
 - FortiGate (Firewall)
 - LAN Switch
 - DMZ Switch
@@ -10,7 +10,8 @@ This is a project where I built a small network
 ![Screenshot 2023-11-14 at 12 32 27 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/4ee46fdc-9c6f-4364-b831-ec20d32d3f23)
 
 ## Configure the FortiGate Firewall
-- Create password
+
+### Create password:
 
 ![Screenshot 2023-11-14 at 12 39 18 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/f5cd74fa-65de-49c5-a67b-c4e8c0c03e83)
 
@@ -48,7 +49,7 @@ conf sys dhcp server
 
 ## Add Windows workstation (Test DHCP Server / Test Connectivity)
 
-Test DHCP address assignment:
+### Test DHCP address assignment:
 
 ```
 ipconfig /all
@@ -56,7 +57,7 @@ ipconfig /all
 
 ![Windows_ipconfig](https://github.com/aarongithub1/NTT-Project/assets/31551830/84469464-3eca-4c41-9a54-d5fa24ca844d)
 
-Test Connectivity:
+### Test Connectivity:
 
 Ping:
 - LAN - 10.128.0.1
@@ -65,3 +66,24 @@ Ping:
 
 ![Windows_ping](https://github.com/aarongithub1/NTT-Project/assets/31551830/4bcf179e-d944-4753-aa18-7d9b7a6ada44)
 
+## Connect to the Firewall GUI
+
+### Open a web browser and type the gateway address into the URL box
+
+![FortiGate_GUI](https://github.com/aarongithub1/NTT-Project/assets/31551830/32c0c0aa-3bdb-4169-a822-6ce868fa050f)
+
+### Make System changes
+
+```
+Go to System > Settings
+```
+
+```
+hostname = firewall
+  timezone = GMT -6:00 Central Time (US & Canada)
+  setup device as local NTP server = enabled
+      list on interfaces = port2, port4
+  idle timeout = 60
+  auto file system check = enabled
+```
+![FortiGate_Sys_Settings](https://github.com/aarongithub1/NTT-Project/assets/31551830/d11a1870-2531-4c8f-bb6e-d0bdf8a7bc20)
