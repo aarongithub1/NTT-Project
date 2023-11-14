@@ -380,8 +380,10 @@ Set timezone and sync with the LAN interface IP on the firewall.
 
 ![Time Zone](https://github.com/aarongithub1/NTT-Project/assets/31551830/d1a018f8-36a7-41f7-a828-c28664739b28)
 
-![Time Zone](https://github.com/aarongithub1/NTT-Project/assets/31551830/013fd012-599e-4b5a-951d-16c740c9c605)
-
 ![Internet Time](https://github.com/aarongithub1/NTT-Project/assets/31551830/ba1cd29a-c192-4945-a5bd-67e3c31a9705)
 
+![Time Sync](https://github.com/aarongithub1/NTT-Project/assets/31551830/4cbfe8f5-2f7a-4df3-8f23-949767e30b5d)
+
+### Change the hostname:
+Change the hostname to “dc” - (short for domain controller)
 
