@@ -246,3 +246,81 @@ Create New > Service Group
   members = ALL_ICMP, NTP, RDP, SSH, Web Access, Windows AD
 ```
 
+DMZ services
+```
+  Create New > Service Group
+  name = DMZ-services-group
+  members = ALL_ICMP, FTP, RDP, SSH, Web Access
+```
+
+Configure firewall Rules
+```
+Configure firewall rules under: (Policy & Objects > IPv4 Policy)
+```
+
+LAN-to-WAN policy
+```
+Create New
+  name = LAN-to-WAN
+  incoming interface = LAN
+  outgoing interface = WAN
+  source = port2 address
+  destination = all
+  service = all
+  NAT = enabled
+  Click "OK" to Apply the changes
+```
+
+DMZ-to-WAN policy
+```
+  Create New
+  name = DMZ-to-WAN
+  incoming interface = DMZ
+  outgoing interface = WAN
+  source = port4 address
+  destination = all
+  service = all
+  NAT = enabled
+  Click "OK" to Apply the changes
+```
+
+LAN-to-DMZ policy
+```
+  Create New
+  name = LAN-to-DMZ
+  incoming interface = LAN
+  outgoing interface = DMZ
+  source = port2 address
+  destination = port4 address
+  service = DMZ-services-group
+  NAT = disabled
+  Click "OK" to Apply the changes
+```
+
+DMZ-to-LAN policy
+```
+  Create New
+  name = DMZ-to-LAN
+  incoming interface = DMZ
+  outgoing interface = LAN
+  source = port4 address
+  destination = port2 address
+  service = LAN-services-group
+  NAT = disabled
+  Click "OK" to Apply the changes
+```
+
+WAN-to-DMZ policy
+```
+  Create New
+  name = WAN-to-DMZ
+  incoming interface = WAN
+  outgoing interface = DMZ
+  source = all
+  destination = port4 address
+  service = DMZ-services-group
+  NAT = disabled
+  Click "OK" to Apply the changes
+```
+
+### Backup the firewall Config
