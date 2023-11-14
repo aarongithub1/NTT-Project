@@ -15,11 +15,9 @@ Configure the FortiGate Firewall
 - Create password
 - Configure Interface
 ```
-{
 conf sys int
       edit port2
           set allowaccess ping http https ssh
           set ip 10.128.0.1/24
       end
-}
 ```
