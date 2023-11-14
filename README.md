@@ -338,3 +338,25 @@ WAN-to-DMZ policy
 
 ![Add_Windows Server_2012r2](https://github.com/aarongithub1/NTT-Project/assets/31551830/31ad74b8-cd05-44bd-943e-172b5aaedc8d)
 
+### Start the Win2012r2 server in GNS3 then double click to open in VNC
+- select keyboard layout
+- Click NEXT then I accept on the license agreement
+- Create a password
+- Use the “Send Crtl+Alt+Del” macro to login
+- Type in your password
+
+### Set a static IP address:
+```
+Change Adapter Settings > Ethernet Instance > Properties > TCP/IPv4 > Properties
+```
+```
+  ip address: 10.128.0.10
+  subnet mask: 255.255.255.0
+  default gateway: 10.128.0.1
+  
+  DNS1: 127.0.0.1
+  DNS2: 10.128.0.1
+```
+
+![Win_Server_Static_IP](https://github.com/aarongithub1/NTT-Project/assets/31551830/c9b9df2d-1661-4028-b0d6-9ddb27aedfb8)
+
