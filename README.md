@@ -332,4 +332,9 @@ WAN-to-DMZ policy
 
 # Stage 2 (Domain Setup)
 
-##
+## Prepare a Win2012r2 server
+
+### Drage the Windows Server 2012r2 into the GNS3 project area and add a link to the LAN Switch
+
+![Add_Windows Server_2012r2](https://github.com/aarongithub1/NTT-Project/assets/31551830/31ad74b8-cd05-44bd-943e-172b5aaedc8d)
+
