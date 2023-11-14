@@ -360,3 +360,15 @@ Change Adapter Settings > Ethernet Instance > Properties > TCP/IPv4 > Properties
 
 ![Win_Server_Static_IP](https://github.com/aarongithub1/NTT-Project/assets/31551830/c9b9df2d-1661-4028-b0d6-9ddb27aedfb8)
 
+### Test network connectivity:
+
+Ping remote destinations to test LAN, WAN, and DNS network connectivity
+```
+  LAN - 10.128.0.1
+  WAN - 8.8.8.8
+  DNS - google.com
+```
+
+![Ping_Connectivity](https://github.com/aarongithub1/NTT-Project/assets/31551830/06c05fe0-ce6c-43ab-811a-39a32cde41b2)
+
+
