@@ -1,6 +1,7 @@
 # Network Tools and Technologies Project
+```
 ### This is a project where I built a small network
-
+```
 # Stage 1 (Network Setup)
 
 ## In GNS3 - Drag network equipment into the project area and connect all the devices
