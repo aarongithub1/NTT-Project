@@ -371,4 +371,17 @@ Ping remote destinations to test LAN, WAN, and DNS network connectivity
 
 ![Ping_Connectivity](https://github.com/aarongithub1/NTT-Project/assets/31551830/06c05fe0-ce6c-43ab-811a-39a32cde41b2)
 
+### Configure NTP:
+Windows Time service tools and settings
+Set timezone and sync with the LAN interface IP on the firewall.
+```
+10.128.0.1
+```
+
+![Time Zone](https://github.com/aarongithub1/NTT-Project/assets/31551830/d1a018f8-36a7-41f7-a828-c28664739b28)
+
+![Time Zone](https://github.com/aarongithub1/NTT-Project/assets/31551830/013fd012-599e-4b5a-951d-16c740c9c605)
+
+![Internet Time](https://github.com/aarongithub1/NTT-Project/assets/31551830/ba1cd29a-c192-4945-a5bd-67e3c31a9705)
+
 
