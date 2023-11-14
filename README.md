@@ -1,5 +1,5 @@
 # Network Tools and Technologies Project
-This is a project where I built a small network
+### This is a project where I built a small network
 
 # Stage 1 (Network Setup)
 
