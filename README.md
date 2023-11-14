@@ -13,6 +13,8 @@ In GNS3 - drag all network equipment into the project and connect all the device
 ## Step 2
 Configure the FortiGate Firewall
 - Create password
+![Screenshot 2023-11-14 at 12 39 18 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/f5cd74fa-65de-49c5-a67b-c4e8c0c03e83)
+
 - Configure Interface
 ```
 conf sys int
@@ -21,3 +23,4 @@ conf sys int
           set ip 10.128.0.1/24
       end
 ```
+![Screenshot 2023-11-14 at 12 46 15 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/e29a246d-b887-4f11-97c9-32c60729b11d)
