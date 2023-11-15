@@ -498,3 +498,50 @@ c:\windows\web\wallpaper\windows\img0.jpg
 - Logout of win10
 - log back in
 - The background should be updated
+
+---
+
+# Stage 3
+
+
+   
+## Add new devices to the lab workspace, and link them up
+
+![IIS_Topology](https://github.com/aarongithub1/NTT-Project/assets/31551830/e56ce06a-48d4-4cb4-ac53-f977769200e2)
+
+## Prepare a Win2012r2 server to join the domain
+```
+hostname: iis
+```
+![IIS_Host_name](https://github.com/aarongithub1/NTT-Project/assets/31551830/55c51582-762e-4522-9e7c-ce339d05508d)
+
+```
+  ip address: 10.128.0.80
+  subnet mask: 255.255.255.0
+  default gateway: 10.128.0.1
+  DNS1: 10.128.0.10
+  DNS2: 10.128.0.1
+```
+![IIS_Static_IP](https://github.com/aarongithub1/NTT-Project/assets/31551830/a92932ed-9c04-4b66-a175-39f6653c4310)
+
+```
+  NTP sync with: dc.widgets.localdomain
+```
+![IIS_NTP_sync](https://github.com/aarongithub1/NTT-Project/assets/31551830/50366cb9-f65c-4883-ad3c-88c1fea1fc5f)
+
+```
+  join to the widgets domain "widgets.localdomain"
+```
+![IIS_Host_name](https://github.com/aarongithub1/NTT-Project/assets/31551830/ffd01052-c988-42d5-a677-b6063c532b2a)
+
+## Install the “Internet Information Services” server role
+
+![IIS_add_roles_features](https://github.com/aarongithub1/NTT-Project/assets/31551830/d47de7ee-269f-4dcd-b529-276d6d41ce1a)
+
+![IIS_roles_complete](https://github.com/aarongithub1/NTT-Project/assets/31551830/2e82752a-9c9c-438e-ae9f-f6e3d7db9cd6)
+
+
+## Add a test webpage, and verify access over the LAN network
+
+![IIS_add_localhost_trusted](https://github.com/aarongithub1/NTT-Project/assets/31551830/fea2db64-567f-436d-a5a3-871fe8bc686f)
+
