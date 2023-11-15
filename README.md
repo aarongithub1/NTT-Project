@@ -451,7 +451,18 @@ admin account: a-awest
 
 ![DC_AD_AdamWest_domain admins](https://github.com/aarongithub1/NTT-Project/assets/31551830/6125d865-a01e-44f4-a04e-0ea3b2d68261)
 
+After Creating User and Admin accounts, add the "admin" accounts to the “domain admins” security group and click the "Check Names" Button. - Then click OK
+
 ![DC_AD_AdamWest_domain admins_2](https://github.com/aarongithub1/NTT-Project/assets/31551830/12f9121b-dfed-472a-aae6-e55d053f5c1f)
 
+## Prepare Win10 to join the domain
 
-After Creating User and Admin accounts, add the admin accounts to the “domain admins” security group and click the "Check Names" Button. - Then click OK
+- Change the hostname to "win10" - then reboot.
+- Change the primary DNS server to the IP address of the DC Server
+- Set NTP to sync with "dc.widgets.localdomain"
+
+![Screenshot 2023-11-15 at 4 14 07 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/725e79b7-05de-4eb0-945a-7a7f6561df9e)
+
+![Screenshot 2023-11-15 at 4 14 38 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/0f293b5b-ec4e-4088-8926-5cae7c337f9a)
+
+![Screenshot 2023-11-15 at 4 15 19 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/1b0eb868-209d-451c-bbe3-3ab0493b7cc6)
