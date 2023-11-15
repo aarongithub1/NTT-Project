@@ -389,9 +389,9 @@ Set timezone and sync with the LAN interface IP on the firewall.
 ### Change the hostname:
 Change the hostname to “dc” - (short for domain controller)
 
-### Install Active Directory
+## Install Active Directory
 
-Promote server to Domain Controller
+### Promote server to Domain Controller
 
 - Click Manage > Add Roles and Features
   
@@ -415,7 +415,8 @@ At the top of the screen there should be a flag next to the word manage with a y
 
 ![DC_promote server](https://github.com/aarongithub1/NTT-Project/assets/31551830/7119b322-f4ea-412a-916f-362318fb4473)
 
-- Select the option to "Add a new forest" and then type the domain name that you want, then click Next  
+- Select the option to "Add a new forest"
+- Type the domain name that you want "widgets.localdomain" - click Next
 
 ![DC_add new forest](https://github.com/aarongithub1/NTT-Project/assets/31551830/ef3ed1c9-46d6-43c5-9cb4-a90e30dcd9b3)
 
@@ -431,3 +432,13 @@ On the Domain Controller Options screen:
 - Once the install completes the server will reboot
 - Once rebooted you will sign into your new domain
 
+## Create User and Admin Accounts:
+
+Use this format for the accounts:
+example user: Adam West
+user account: u-awest
+admin account: a-awest
+
+![DC_AD_add user_1](https://github.com/aarongithub1/NTT-Project/assets/31551830/9847af5f-bdea-4d07-b332-9083c4433cdd)
+
+After Creating User and Admin accounts, add the admin accounts to the “domain admins” security group and click the "Check Names" Button. - Then click OK
