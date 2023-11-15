@@ -466,3 +466,18 @@ After Creating User and Admin accounts, add the "admin" accounts to the “domai
 ![Screenshot 2023-11-15 at 4 14 38 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/0f293b5b-ec4e-4088-8926-5cae7c337f9a)
 
 ![Screenshot 2023-11-15 at 4 15 19 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/1b0eb868-209d-451c-bbe3-3ab0493b7cc6)
+
+![Screenshot 2023-11-15 at 4 33 40 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/d13512b0-e4f6-4704-afa5-9db708dff19f)
+
+## Join Win10 to the widgets.localdomain domain
+
+Join win10 to the domain with your domain admin account, then login with your domain user account
+
+![Screenshot 2023-11-15 at 4 38 03 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/e2f1c136-739f-4002-bb9c-4b36b7191362)
+
+![Screenshot 2023-11-15 at 4 38 59 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/5a70158e-bb35-4f3a-b98f-d3e35b235405)
+
+![Screenshot 2023-11-15 at 4 42 28 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/036227b9-6be5-4d12-9224-fe86ba664db6)
+
+![Screenshot 2023-11-15 at 4 44 08 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/0ca187cc-7461-42f9-b5b0-4d4c6c26883e)
+
