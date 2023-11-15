@@ -441,4 +441,6 @@ admin account: a-awest
 
 ![DC_AD_add user_1](https://github.com/aarongithub1/NTT-Project/assets/31551830/9847af5f-bdea-4d07-b332-9083c4433cdd)
 
+![DC_AD_new user](https://github.com/aarongithub1/NTT-Project/assets/31551830/1e97f3da-766f-4588-963b-761103f685cb)
+
 After Creating User and Admin accounts, add the admin accounts to the “domain admins” security group and click the "Check Names" Button. - Then click OK
