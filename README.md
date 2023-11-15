@@ -479,5 +479,5 @@ Join win10 to the domain with your domain admin account, then login with your do
 
 ![Screenshot 2023-11-15 at 4 42 28 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/036227b9-6be5-4d12-9224-fe86ba664db6)
 
-![Screenshot 2023-11-15 at 4 44 08 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/0ca187cc-7461-42f9-b5b0-4d4c6c26883e)
+![Screenshot 2023-11-15 at 4 46 24 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/15af2bf8-2251-4e02-a67a-bb1fff8ec17c)
 
