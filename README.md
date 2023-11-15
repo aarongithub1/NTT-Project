@@ -535,6 +535,39 @@ NTP sync with: dc.widgets.localdomain
 
 ## Install the “Internet Information Services” server role
 
+- Open Server Manager
+- Click the Manage menu, and then click Add Roles and Features
+- Before You Begin page, click Next
+- Installation Type page, select Role-based or feature-based installation to configure a single server. Click Next
+
+![Screenshot 2023-11-15 at 5 23 35 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/bfdf3b60-c01a-41e5-828d-d7d39abb6f71)
+
+- On the Server Selection page, select Select a server from the server pool, and then select a server - Click Next
+
+![Screenshot 2023-11-15 at 5 25 42 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/55d9fc9b-d2e6-4cd1-9a3c-a922e4eded4f)
+
+- On the Server Roles page, select Web Server (IIS)
+
+![Screenshot 2023-11-15 at 5 27 06 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/ff5832eb-ccb8-4f94-b8ca-d2f018831e8b)
+
+- On the Add Roles and Features wizard, click Add Features - then on the Server Roles page, click Next
+
+![Screenshot 2023-11-15 at 5 28 10 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/4bf1e825-4d70-4aec-8468-ba482f3244eb)
+
+![Screenshot 2023-11-15 at 5 29 38 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/2ca026f0-5315-44f4-b1cf-1c6a314bbfb0)
+
+- On the Web Server Role (IIS) page, click Next
+
+- On the Role Services page, click Next
+
+![Screenshot 2023-11-15 at 5 30 53 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/254bc343-efa8-43de-b639-bcf7fb11a195)
+
+- On the Confirmation page, select "Restart the destination server automatically if required"
+- On the Confirmation page, click Install
+
+![Screenshot 2023-11-15 at 5 34 20 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/f59d43d0-cae0-4f13-a449-cd256d49c6e5)
+
+
 ![IIS_add_roles_features](https://github.com/aarongithub1/NTT-Project/assets/31551830/d47de7ee-269f-4dcd-b529-276d6d41ce1a)
 
 ![IIS_roles_complete](https://github.com/aarongithub1/NTT-Project/assets/31551830/2e82752a-9c9c-438e-ae9f-f6e3d7db9cd6)
