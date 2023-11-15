@@ -328,7 +328,9 @@ WAN-to-DMZ policy
 
 ### Backup the firewall Config
 
+
 ---
+
 
 # Stage 2 (Domain Setup)
 
@@ -408,7 +410,7 @@ At the top of the screen there should be a flag next to the word manage with a y
 
 ![DC_Feature_Install_yellow_Flag](https://github.com/aarongithub1/NTT-Project/assets/31551830/2a0ca2c6-81de-4fc4-bd22-f2233742ee06)
 
-- Click the flag, a window will open telling you that there is still some configuration that is needed to make this server a domain controller.  
+- Click the flag, a window will open - stating "Configuration Required for Active Directory Domain Services."
 - Click the "Promote this server to a domain controller" link
 
 ![DC_promote server](https://github.com/aarongithub1/NTT-Project/assets/31551830/7119b322-f4ea-412a-916f-362318fb4473)
@@ -421,19 +423,12 @@ At the top of the screen there should be a flag next to the word manage with a y
 - On the Domain Controller Options screen
       - Select the Forest functional and Domain functional level
       - In "Specify domain controller capabilities" leave defaults
-      - Enter the Dictionary Services Restore Mode (DSRM) password
-- Click Next
- 
-On the DNS options screen, ignore the warning about the delegation and click Next
-On the Additional options page, make sure that the name of your domain is listed as the NetBios domain name, sometimes there will already be a computer or printer on the network with the same name so if your NetBios name ends in a 0, we will need to change the name of that device before we continue. For my Domain of Matrix.loc the NetBios name is Matrix – Click Next
-On the Paths screen, defaults should be fine but if you so desired you could change them to another local harddisk or partition.
-On review options click Next
-The server will now check to make sure all the prerequisites for the domain controller is satisfied, there will be some warnings, but that should be fine, review and Click Install
-Once the install completes the server will reboot
-Once rebooted you will sign into your new domain
-Once the domain is up and running there are a few things that will need to be done to fully utilize Active Directory
-Users will need to be created
-Client computers will need to point their Nics dns settings to the servers IP
-Computers will need to be joined to the domain
-Active Directory is scalable and flexible enough to grow with your company. Please feel free to ask us any questions or provide feedback (good or bad) to us.
-post tagActive Directory, AD DS, Domain Controller cloning, en-US, has comment, has image, How To, windows server 2012 r2
+      - Enter the Dictionary Services Restore Mode (DSRM) password - Click Next
+      - DNS options screen, ignore the warning about the delegation - Click Next
+      - Additional options page, make sure that the name of your domain is listed as the NetBios domain name. For my Domain of widgets.localdomain the NetBios name is widgets – Click Next
+      - Paths screen, use defaults - click Next
+      - Review options - click Next
+      - Review and Click Install
+- Once the install completes the server will reboot
+- Once rebooted you will sign into your new domain
+
