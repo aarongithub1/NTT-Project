@@ -387,10 +387,53 @@ Set timezone and sync with the LAN interface IP on the firewall.
 ### Change the hostname:
 Change the hostname to “dc” - (short for domain controller)
 
-Step 2 – Set Server up
-Get the server setup, cabled, powered up and if need be get OS installed on it
-First screen will ask for a password – fill that out – the server will finalize the settings, reboot and then allow you to log in.  
-When you finally log into the server for the first time – Server Manager will start up
-Select Local Server on the left and you should see a screen similar to below:  
-NOTE: there are a few things we need to change here – first being Computer name (Nobody will remember that name if they needed to)
-Click on the Server's Name (The Blue text) this screen will show up – Click Change
+### Install Active Directory
+
+Promote server to Domain Controller
+
+- Click Manage > Add Roles and Features
+  
+Once in the Wizard:
+- Click Next on the first screen
+- Keep the defaults (Role-based or feature-based installation) on Installation type and Click Next
+- Keep the defaults (Select a server from the server pool), make sure your new server is highlighted, Click Next
+- Put a check mark next to "Active Directory Domain Services" on Server Roles, Click Add Features on the popup screen, Click Next
+- On the features screen, Click Next
+- On AD DS screen, Click Next
+- And finally on the confirmation screen, Click Install
+- Active Directory binaries will be installed
+- Once that finishes Click the Close Button
+
+At the top of the screen there should be a flag next to the word manage with a yellow caution symbol.
+
+![DC_Feature_Install_yellow_Flag](https://github.com/aarongithub1/NTT-Project/assets/31551830/2a0ca2c6-81de-4fc4-bd22-f2233742ee06)
+
+- Click the flag, a window will open telling you that there is still some configuration that is needed to make this server a domain controller.  
+- Click the "Promote this server to a domain controller" link
+
+![DC_promote server](https://github.com/aarongithub1/NTT-Project/assets/31551830/7119b322-f4ea-412a-916f-362318fb4473)
+
+- Select the option to "Add a new forest" and then type the domain name that you want, then click Next  
+
+![DC_add new forest](https://github.com/aarongithub1/NTT-Project/assets/31551830/ef3ed1c9-46d6-43c5-9cb4-a90e30dcd9b3)
+
+
+- On the Domain Controller Options screen
+      - Select the Forest functional and Domain functional level
+      - In "Specify domain controller capabilities" leave defaults
+      - Enter the Dictionary Services Restore Mode (DSRM) password
+- Click Next
+ 
+On the DNS options screen, ignore the warning about the delegation and click Next
+On the Additional options page, make sure that the name of your domain is listed as the NetBios domain name, sometimes there will already be a computer or printer on the network with the same name so if your NetBios name ends in a 0, we will need to change the name of that device before we continue. For my Domain of Matrix.loc the NetBios name is Matrix – Click Next
+On the Paths screen, defaults should be fine but if you so desired you could change them to another local harddisk or partition.
+On review options click Next
+The server will now check to make sure all the prerequisites for the domain controller is satisfied, there will be some warnings, but that should be fine, review and Click Install
+Once the install completes the server will reboot
+Once rebooted you will sign into your new domain
+Once the domain is up and running there are a few things that will need to be done to fully utilize Active Directory
+Users will need to be created
+Client computers will need to point their Nics dns settings to the servers IP
+Computers will need to be joined to the domain
+Active Directory is scalable and flexible enough to grow with your company. Please feel free to ask us any questions or provide feedback (good or bad) to us.
+post tagActive Directory, AD DS, Domain Controller cloning, en-US, has comment, has image, How To, windows server 2012 r2
