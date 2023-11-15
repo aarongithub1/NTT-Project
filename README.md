@@ -514,25 +514,24 @@ c:\windows\web\wallpaper\windows\img0.jpg
 hostname: iis
 ```
 ```
-  ip address: 10.128.0.80
-  subnet mask: 255.255.255.0
-  default gateway: 10.128.0.1
-  DNS1: 10.128.0.10
-  DNS2: 10.128.0.1
+join to the widgets domain "widgets.localdomain"
 ```
 ```
-  NTP sync with: dc.widgets.localdomain
+ip address: 10.128.0.80
+subnet mask: 255.255.255.0
+default gateway: 10.128.0.1
+DNS1: 10.128.0.10
+DNS2: 10.128.0.1
 ```
 ```
-  join to the widgets domain "widgets.localdomain"
+NTP sync with: dc.widgets.localdomain
 ```
+
 ![IIS_Host_name](https://github.com/aarongithub1/NTT-Project/assets/31551830/55c51582-762e-4522-9e7c-ce339d05508d)
 
 ![IIS_Static_IP](https://github.com/aarongithub1/NTT-Project/assets/31551830/a92932ed-9c04-4b66-a175-39f6653c4310)
 
 ![IIS_NTP_sync](https://github.com/aarongithub1/NTT-Project/assets/31551830/50366cb9-f65c-4883-ad3c-88c1fea1fc5f)
-
-![IIS_Host_name](https://github.com/aarongithub1/NTT-Project/assets/31551830/ffd01052-c988-42d5-a677-b6063c532b2a)
 
 ## Install the “Internet Information Services” server role
 
