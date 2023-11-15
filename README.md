@@ -481,3 +481,20 @@ Join win10 to the domain with your domain admin account, then login with your do
 
 ![Screenshot 2023-11-15 at 4 46 24 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/15af2bf8-2251-4e02-a67a-bb1fff8ec17c)
 
+## Set the desktop background with GPO (Group Policy Object)
+
+- login to the DC Server and open the Group Policy Management Console
+- Edit the Default Domain Policy
+
+Set the desktop image to:
+```
+c:\windows\web\wallpaper\windows\img0.jpg
+```
+
+![Screenshot 2023-11-15 at 4 51 11 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/6577596c-5e08-479c-84c1-4dc4c0f4b574)
+
+![Screenshot 2023-11-15 at 4 51 44 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/89c8040c-7e0a-4ab4-be37-a89755889bad)
+
+- Logout of win10
+- log back in
+- The background should be updated
