@@ -387,3 +387,10 @@ Set timezone and sync with the LAN interface IP on the firewall.
 ### Change the hostname:
 Change the hostname to “dc” - (short for domain controller)
 
+Step 2 – Set Server up
+Get the server setup, cabled, powered up and if need be get OS installed on it
+First screen will ask for a password – fill that out – the server will finalize the settings, reboot and then allow you to log in.  
+When you finally log into the server for the first time – Server Manager will start up
+Select Local Server on the left and you should see a screen similar to below:  
+NOTE: there are a few things we need to change here – first being Computer name (Nobody will remember that name if they needed to)
+Click on the Server's Name (The Blue text) this screen will show up – Click Change
