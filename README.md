@@ -420,15 +420,15 @@ At the top of the screen there should be a flag next to the word manage with a y
 ![DC_add new forest](https://github.com/aarongithub1/NTT-Project/assets/31551830/ef3ed1c9-46d6-43c5-9cb4-a90e30dcd9b3)
 
 
-- On the Domain Controller Options screen
-      - Select the Forest functional and Domain functional level
-      - In "Specify domain controller capabilities" leave defaults
-      - Enter the Dictionary Services Restore Mode (DSRM) password - Click Next
-      - DNS options screen, ignore the warning about the delegation - Click Next
-      - Additional options page, make sure that the name of your domain is listed as the NetBios domain name. For my Domain of widgets.localdomain the NetBios name is widgets – Click Next
-      - Paths screen, use defaults - click Next
-      - Review options - click Next
-      - Review and Click Install
-- Once the install completes the server will reboot
-- Once rebooted you will sign into your new domain
+- [ ] On the Domain Controller Options screen
+- [ ] Select the Forest functional and Domain functional level
+- [ ] In "Specify domain controller capabilities" leave defaults
+- [ ] Enter the Dictionary Services Restore Mode (DSRM) password - Click Next
+- [ ] DNS options screen, ignore the warning about the delegation - Click Next
+- [ ] Additional options page, make sure that the name of your domain is listed as the NetBios domain name. For my Domain of widgets.localdomain the NetBios name is widgets – Click Next
+- [ ] Paths screen, use defaults - click Next
+- [ ] Review options - click Next
+- [ ] Review and Click Install
+- [ ] Once the install completes the server will reboot
+- [ ] Once rebooted you will sign into your new domain
 
