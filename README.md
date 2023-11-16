@@ -611,3 +611,36 @@ http://iis.widgets.localdomain/test.html
 ![Test_Page_on_WIN10](https://github.com/aarongithub1/NTT-Project/assets/31551830/e95627cd-7b8a-409b-8111-829f17ea4f51)
 
 
+## Setup a LAMP server on an Ubutu Machine
+
+### Add new devices to the lab workspace, and link them up
+
+![Screenshot 2023-11-16 at 9 25 27 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/ad785e2d-5dbc-48b7-aa0a-16aa78ecbc51)
+
+### Prepare the Ubuntu server
+- Configure the network settings
+
+```
+ip = 10.128.10.80
+netmask = 255.255.255.0
+gateway = 10.128.10.1
+
+dns = 10.128.0.10,10.128.10.1
+```
+
+![Screenshot 2023-11-16 at 9 27 55 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/aa6e36ac-e001-442b-81ce-90dd1cafeac6)
+
+![Screenshot 2023-11-16 at 9 30 55 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/015f3b6c-10a7-4540-b3e1-56aa835a1115)
+
+### Update the hosts file
+- Open Terminal and change to root and edit the hosts file
+
+```
+127.0.0.1 localhost.localdomain localhost
+10.128.10.80 www.widgets.localdomain www
+```
+
+![Screenshot 2023-11-16 at 9 33 39 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/87b0ee7c-6ac5-40b0-8498-4b13264a1b23)
+
+![Screenshot 2023-11-16 at 9 40 56 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/c7b4629e-c84b-4d29-aa79-c9ae18e90179)
+
