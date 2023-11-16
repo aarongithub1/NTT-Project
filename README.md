@@ -567,14 +567,47 @@ NTP sync with: dc.widgets.localdomain
 
 ![Screenshot 2023-11-15 at 5 34 20 PM](https://github.com/aarongithub1/NTT-Project/assets/31551830/f59d43d0-cae0-4f13-a449-cd256d49c6e5)
 
-
 ![IIS_add_roles_features](https://github.com/aarongithub1/NTT-Project/assets/31551830/d47de7ee-269f-4dcd-b529-276d6d41ce1a)
 
 ![IIS_roles_complete](https://github.com/aarongithub1/NTT-Project/assets/31551830/2e82752a-9c9c-438e-ae9f-f6e3d7db9cd6)
 
-
-## Add a test webpage, and verify access over the LAN network
-
 ![IIS_add_localhost_trusted](https://github.com/aarongithub1/NTT-Project/assets/31551830/fea2db64-567f-436d-a5a3-871fe8bc686f)
 
-## Setup a test webpage on IIS
+## Add a test webpage, and verify access over the LAN network
+### Setup a test webpage on IIS
+
+- Open Notepad and type the following HTML code:
+```
+<html>
+<head>
+<title> IIS test validation website</title>
+</head>
+<body>
+<p>test website validation completed</p>
+</body>
+</html>
+```
+- Save the file as "test.html" and place it in the following folder:
+```
+c:\inetpub\wwwroot\test.html
+```
+
+![Test_Page_Save](https://github.com/aarongithub1/NTT-Project/assets/31551830/6bc3b18d-e8dd-47d6-b1d0-2a1bb2cce988)
+
+
+- Test the page in the local browser on IIS.
+```
+http://localhost/test.html
+```
+
+![Test_Page_on_IIS_Server](https://github.com/aarongithub1/NTT-Project/assets/31551830/20d5adac-c4e6-49e4-bb8f-471de0f2c649)
+
+
+- Also test your page from the win10 workstation
+```
+http://iis.widgets.localdomain/test.html
+```
+
+![Test_Page_on_WIN10](https://github.com/aarongithub1/NTT-Project/assets/31551830/e95627cd-7b8a-409b-8111-829f17ea4f51)
+
+
