@@ -633,7 +633,15 @@ dns = 10.128.0.10,10.128.10.1
 ![Screenshot 2023-11-16 at 9 30 55 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/015f3b6c-10a7-4540-b3e1-56aa835a1115)
 
 ### Update the hosts file
-- Open Terminal and change to root and edit the hosts file
+- Open Terminal and change to root
+```
+sudo -i
+```
+
+- Edit the hosts file
+```
+nano /etc/hosts
+```
 
 ```
 127.0.0.1 localhost.localdomain localhost
@@ -642,5 +650,21 @@ dns = 10.128.0.10,10.128.10.1
 
 ![Screenshot 2023-11-16 at 9 33 39 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/87b0ee7c-6ac5-40b0-8498-4b13264a1b23)
 
-![Screenshot 2023-11-16 at 9 40 56 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/c7b4629e-c84b-4d29-aa79-c9ae18e90179)
+![Screenshot 2023-11-16 at 10 25 59 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/54c6525f-bcb7-4d53-a303-72b3c06b6588)
+
+### Set hostname with hostnamectl
+```
+hostnamectl set-hostname www
+hostnamectl
+```
+
+### Update the packages on the server
+```
+apt update -y
+apt upgrade -y
+apt dist-upgrade -y
+apt autoremove -y
+apt autoclean -y
+systemctl reboot
+```
 
