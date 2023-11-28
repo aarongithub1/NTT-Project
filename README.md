@@ -944,3 +944,21 @@ Join to the widgets domain.
 
 ![FTP_no_SSL](https://github.com/aarongithub1/NTT-Project/assets/31551830/67d5bd2d-7bd1-4729-93ed-81b382a9e1d6)
 
+### On DC server - in AD users and computers - Create the "FTPUsers" group and add your admin accounts to this group.
+
+![AD_Users_group](https://github.com/aarongithub1/NTT-Project/assets/31551830/fb106b16-b6db-4bad-9d3d-d38d44c5239d)
+
+## Test FTP server on local server 'internet explorer' (edge won't work)
+
+### Add "ftp://127.0.0.1' or 'ftp://10.128.10.21' to the internet options Trusted Sites list.
+
+![FTP_add_to trusted sites](https://github.com/aarongithub1/NTT-Project/assets/31551830/3e80cfaf-93ed-4523-bbe1-7e1ff82e0b0f)
+
+### Enter your admin user and password when prompted.
+
+![FTP_enter admin and password](https://github.com/aarongithub1/NTT-Project/assets/31551830/b8c1c4dc-cae4-45e2-8964-5af8f3b4b415)
+
+### You should see your FTP folder and any other files and folders in that directory.
+
+![FTP_server files](https://github.com/aarongithub1/NTT-Project/assets/31551830/aa071da5-edcb-4096-b1e0-e6e60e2d277e)
+
