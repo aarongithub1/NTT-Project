@@ -962,3 +962,11 @@ Join to the widgets domain.
 
 ![FTP_server files](https://github.com/aarongithub1/NTT-Project/assets/31551830/aa071da5-edcb-4096-b1e0-e6e60e2d277e)
 
+### On DC Server > Server Manager > Tools > DNS > Forward Lookup Zones > widgets.localdomain > add an ftp Host A file
+
+![FTP_DC_tools_DNS_add A file](https://github.com/aarongithub1/NTT-Project/assets/31551830/b550d289-d828-494a-b25d-7774aa728dda)
+
+### on your Windows 10 workstation, Open 'Internet Explorer', enter ftp://ftp.widgets.localdomain into the URL bar. (you may need to add this to your internet options Trusted sites as well)
+
+![FTP_access from win10workstation](https://github.com/aarongithub1/NTT-Project/assets/31551830/93cf2e95-3482-4f21-9d66-9140a72fc05c)
+
