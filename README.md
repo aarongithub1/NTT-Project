@@ -735,3 +735,97 @@ ip address = 10.128.10.80
 create associated pointer (PTR) record = unchecked
 add host
 ```
+
+From win10, open the dokuwiki installer url in the browser:
+```
+http://www.widgets.localdomain/install.php
+```
+<img width="1086" alt="DokuWiki_Installer" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/50bf21a3-a127-490a-9c18-05fae97d8efe">
+```
+wiki name = Widgets Network Documentation Wiki
+superuser = wikiadmin
+real name = service account
+e-mail = wikiadmin@widgets.localdomain
+password = Passw0rd!
+initial ACL policy = Public Wiki
+```
+<img width="1105" alt="DokuWiki_setup" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/10605e55-b5b3-45a3-aacd-c767c42b3f86">
+
+### Rename the install file on www
+```
+mv /var/www/html/dokuwiki/install.php /var/www/html/dokuwiki/install.php.removed
+```
+<img width="1102" alt="Screenshot 2023-11-28 at 12 46 29 PM" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/756309b6-5e47-4bbb-ad30-96b918902827">
+
+### Login to the Wiki  
+On Win10, open the wiki url and login.  
+```
+http://www.widgets.localdomain/
+user = wikiadmin
+password = Passw0rd!
+```
+
+Create the start page.
+
+<img width="1336" alt="DokuWiki_create_startpage" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/037a5808-260e-4c1b-967c-c780aa00c9c8">
+
+### Document the Network
+
+<img width="1434" alt="DokuWiki_documentNetwork" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/b5c2c9d2-52ee-45ea-9218-2aa3b2c4b4eb">
+
+```
+ ====== Welcome to the widgets.localdomain Wiki! ======
+  
+  
+  This wiki will be used to document the network resources for the Widgets environment.\\
+  
+  firewall
+      hostname = firewall
+      FQDN = firewall.widgets.localdomain  (needs to be created on dc)
+      a-record created = not yet
+      network info:
+        wan is port1 on dhcp from cloud, connected to WAN-SWITCH
+        lan is port2 on 10.128.0.1/24, connected to LAN-SWITCH
+        dmz is port4 on 10.128.10.1/24, connected to DMZ-SWITCH
+        guest is port3 on 10.128.99.1/24, not connected
+  win10
+      hostname = win10
+      FQDN = win10.widgets.localdomain
+      a-record created = dynamically on dc.widgets.localdomain
+      network info: dhcp, LAN network
+  dc
+      hostname = dc
+      FQDN = dc.widgets.localdomain
+      a-record created = automatically on dc.widgets.localdomain
+      network info: static, 10.128.0.10/24, LAN network
+      services: AD and DNS services
+  iis
+      hostname = iis
+      FQDN = iis.widgets.localdomain (needs to be created on dc)
+      a-record created = not yet
+      network info: static, 10.128.0.80/24, LAN network
+      services: webserver
+  www
+      hostname = www
+      FQDN = www.widgets.localdomain
+      a-record created = static on dc.widgets.localdomain
+      network info: static, 10.128.10.80/24, DMZ network
+      services: webserver, wiki
+```
+
+```
+FQDN = firewall.widgets.localdomain (needs to be created on dc)
+a-record created = not yet
+FQDN = iis.widgets.localdomain (needs to be created on dc)
+a-record created = not yet
+```
+
+Create these host (A) records on the DC just like you did for www.widgets.localdomain.
+Note: Remember to uncheck create PTR record.
+Once you have created the record, update your notes on the wiki.
+
+### Open the firewall GUI on Win10
+Create a VIP (Virtual IP) on the firewall.  
+
+<img width="962" alt="Create VIP" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/add73911-4c68-4fad-a401-c84e1e4a4fad">
+
