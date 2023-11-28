@@ -723,11 +723,11 @@ systemctl reload apache2
 
 ### Verify access to the installer
 #### Create a host (A) record in DNS on the DC.
-guide - (https://www.server-world.info/en/note?os=Windows_Server_2012&p=dns&f=4)https://www.server-world.info/en/note?os=Windows_Server_2012&p=dns&f=4](https://www.server-world.info/en/note?os=Windows_Server_2012&p=dns&f=4)
+guide - [guide](https://www.server-world.info/en/note?os=Windows_Server_2012&p=dns&f=4)https://www.server-world.info/en/note?os=Windows_Server_2012&p=dns&f=4](https://www.server-world.info/en/note?os=Windows_Server_2012&p=dns&f=4)
 
-Log onto the DC.
-Open DNS Manager.
-Under the Forward Lookup Zones, add a new host (A) record to the widgets.localdomain domain.
+-Log onto the DC.
+-Open DNS Manager.
+-Under the Forward Lookup Zones, add a new host (A) record to the widgets.localdomain domain.
 
 ```
 name = www
