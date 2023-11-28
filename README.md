@@ -668,3 +668,42 @@ apt autoclean -y
 systemctl reboot
 ```
 
+### On the Ubuntu Server, open the Terminal. Then Switch to root.
+
+<img width="681" alt="LAMP_switch to Root" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/34a86796-5aaa-48cd-9173-c829cb085196">
+
+### Install DokuWiki
+```
+apt install php php-gd php-xml php-json -y
+systemctl enable --now apache2
+ufw allow Apache
+wget https://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz
+mkdir /var/www/html/dokuwiki
+tar xzf dokuwiki-stable.tgz -C /var/www/html/dokuwiki/ --strip-components=1
+```
+
+create the config file for the wiki
+```
+nano /etc/apache2/sites-available/dokuwiki.conf
+```
+Add the following, keep the tabbed spacing.
+```
+<VirtualHost *:80>
+          ServerName    www.widgets.localdomain
+          DocumentRoot  /var/www/html/dokuwiki
+  
+          <Directory ~ "/var/www/html/dokuwiki/(bin/|conf/|data/|inc/)">
+              <IfModule mod_authz_core.c>
+                  AllowOverride All
+                  Require all denied
+              </IfModule>
+              <IfModule !mod_authz_core.c>
+                  Order allow,deny
+                  Deny from all
+              </IfModule>
+          </Directory>
+  
+          ErrorLog   /var/log/apache2/dokuwiki_error.log
+          CustomLog  /var/log/apache2/dokuwiki_access.log combined
+  </VirtualHost>
+```
