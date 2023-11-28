@@ -919,48 +919,78 @@ Join to the widgets domain.
 
 ![FTP_roles_features](https://github.com/aarongithub1/NTT-Project/assets/31551830/06f59a4e-9a26-4344-85c6-fed38170267a)
 
-### Create FTP folder on local Drive.
+### Create FTP folder on local Drive.  
 
 ![FTP_create_FTP_folder_local disk](https://github.com/aarongithub1/NTT-Project/assets/31551830/8d1135a5-d5d3-4abf-84a6-bdfaf7931399)
 
-### Open IIS
+### Open IIS  
 
 ![FTP_Tools_IIS](https://github.com/aarongithub1/NTT-Project/assets/31551830/2202c724-5278-41e3-a795-5d52e81fca58)
 
-### Create FTP site (Right click FTP Server)
+### Create FTP site (Right click FTP Server)  
 
 ![FTP_Add_FTP_site](https://github.com/aarongithub1/NTT-Project/assets/31551830/f08804f6-1250-4f1a-adcb-ec01ac1934de)
 
-### Name the FTP site (ftp) and give it the path to your FTP File on your local drive. (click Next)
+### Name the FTP site (ftp) and give it the path to your FTP File on your local drive. (click Next)  
 
 ![FTP_path_to_FTP_folder](https://github.com/aarongithub1/NTT-Project/assets/31551830/2c4c203d-3dee-4827-9226-82a57acf2369)
 
 
-### Select Basic, Specify roles or user groups, "FTPUsers" (created on the DC), read and write. 
+### Select Basic, Specify roles or user groups, "FTPUsers" (created on the DC), read and write.  
 
 ![FTP_basic_roles_groups_read_write](https://github.com/aarongithub1/NTT-Project/assets/31551830/f9483176-7993-4747-adbc-5f82d9362070)
 
-### No SSL
+### No SSL  
 
 ![FTP_no_SSL](https://github.com/aarongithub1/NTT-Project/assets/31551830/67d5bd2d-7bd1-4729-93ed-81b382a9e1d6)
 
-### On DC server - in AD users and computers - Create the "FTPUsers" group and add your admin accounts to this group.
+### On DC server - in AD users and computers - Create the "FTPUsers" group and add your admin accounts to this group.  
 
 ![AD_Users_group](https://github.com/aarongithub1/NTT-Project/assets/31551830/fb106b16-b6db-4bad-9d3d-d38d44c5239d)
 
-## Test FTP server on local server 'internet explorer' (edge won't work)
+## Test FTP server on local server 'internet explorer' (edge won't work)  
 
-### Add "ftp://127.0.0.1' or 'ftp://10.128.10.21' to the internet options Trusted Sites list.
+### Add "ftp://127.0.0.1' or 'ftp://10.128.10.21' to the internet options Trusted Sites list.  
 
 ![FTP_add_to trusted sites](https://github.com/aarongithub1/NTT-Project/assets/31551830/3e80cfaf-93ed-4523-bbe1-7e1ff82e0b0f)
 
-### Enter your admin user and password when prompted.
+### Enter your admin user and password when prompted.  
 
 ![FTP_enter admin and password](https://github.com/aarongithub1/NTT-Project/assets/31551830/b8c1c4dc-cae4-45e2-8964-5af8f3b4b415)
 
-### You should see your FTP folder and any other files and folders in that directory.
+### You should see your FTP folder and any other files and folders in that directory.  
 
 ![FTP_server files](https://github.com/aarongithub1/NTT-Project/assets/31551830/aa071da5-edcb-4096-b1e0-e6e60e2d277e)
+
+### On your FTP Server, go to Control Panel > Windows Firewall > Advanced settings > Inbound Rules > Add New Rule  
+
+<img width="986" alt="Screenshot 2023-11-28 at 4 03 44 PM" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/0067f1e3-0570-41d6-85e2-3edad24ed5f8">
+
+![FTP_firewall_inbound rule_new rule](https://github.com/aarongithub1/NTT-Project/assets/31551830/0924e3f2-61d2-4fcb-955e-f9e561d8b3fe)
+
+### Select 'Port'  
+
+<img width="978" alt="Screenshot 2023-11-28 at 4 05 37 PM" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/4290a803-cb76-4640-b931-0d313012fe90">
+
+### Select 'Specific local port (21)
+
+<img width="977" alt="Screenshot 2023-11-28 at 4 07 16 PM" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/fd9906a3-b0ab-44b7-a425-d1107bbe11d2">
+
+### Allow connection
+
+<img width="974" alt="Screenshot 2023-11-28 at 4 08 25 PM" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/625d06a3-5b3e-46d2-9a72-62c6355f95c9">
+
+### Domain, Private, Public
+
+<img width="976" alt="Screenshot 2023-11-28 at 4 09 47 PM" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/91186114-36d1-495f-a10d-0a372e223d0a">
+
+### Name and Description
+
+<img width="976" alt="Screenshot 2023-11-28 at 4 10 35 PM" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/05cd74c3-9150-4ad2-8028-722861f9a871">
+
+### Complete Rule
+
+![FTP-inbound rule complete](https://github.com/aarongithub1/NTT-Project/assets/31551830/7a65cabc-2ca8-46b8-b4bd-6bb9387dc2b9)
 
 ### On DC Server > Server Manager > Tools > DNS > Forward Lookup Zones > widgets.localdomain > add an ftp Host A file
 
