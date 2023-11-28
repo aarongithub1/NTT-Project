@@ -707,3 +707,5 @@ Add the following, keep the tabbed spacing.
           CustomLog  /var/log/apache2/dokuwiki_access.log combined
 </VirtualHost>
 ```
+<img width="895" alt="LAMP_dokuwiki_config" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/26545d4c-1c1c-46cf-b7f1-2d0e50664545">
+
