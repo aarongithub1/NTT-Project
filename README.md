@@ -709,3 +709,29 @@ Add the following, keep the tabbed spacing.
 ```
 <img width="895" alt="LAMP_dokuwiki_config" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/26545d4c-1c1c-46cf-b7f1-2d0e50664545">
 
+save (ctrl+S) exit (ctrl+X)
+
+Finish the config.
+```
+cp /var/www/html/dokuwiki/.htaccess{.dist,}
+chown -R www-data:www-data /var/www/html/dokuwiki
+apache2ctl -t
+a2dissite 000-default.conf
+a2ensite dokuwiki.conf
+systemctl reload apache2
+```
+
+### Verify access to the installer
+#### Create a host (A) record in DNS on the DC.
+guide - [Create a host (A) record in DNS on the DC.](https://www.server-world.info/en/note?os=Windows_Server_2012&p=dns&f=4)https://www.server-world.info/en/note?os=Windows_Server_2012&p=dns&f=4
+
+Log onto the DC.
+Open DNS Manager.
+Under the Forward Lookup Zones, add a new host (A) record to the widgets.localdomain domain.
+
+```
+name = www
+ip address = 10.128.10.80
+create associated pointer (PTR) record = unchecked
+add host
+```
