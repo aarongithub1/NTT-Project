@@ -705,5 +705,5 @@ Add the following, keep the tabbed spacing.
   
           ErrorLog   /var/log/apache2/dokuwiki_error.log
           CustomLog  /var/log/apache2/dokuwiki_access.log combined
-  </VirtualHost>
+</VirtualHost>
 ```
