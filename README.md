@@ -686,6 +686,7 @@ create the config file for the wiki
 ```
 nano /etc/apache2/sites-available/dokuwiki.conf
 ```
+
 Add the following, keep the tabbed spacing.
 ```
 <VirtualHost *:80>
@@ -707,11 +708,12 @@ Add the following, keep the tabbed spacing.
           CustomLog  /var/log/apache2/dokuwiki_access.log combined
 </VirtualHost>
 ```
+
 <img width="895" alt="LAMP_dokuwiki_config" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/26545d4c-1c1c-46cf-b7f1-2d0e50664545">
 
-save (ctrl+S) exit (ctrl+X)
+save (ctrl+S) exit (ctrl+X)  
 
-Finish the config.
+Finish the config.  
 ```
 cp /var/www/html/dokuwiki/.htaccess{.dist,}
 chown -R www-data:www-data /var/www/html/dokuwiki
@@ -721,9 +723,9 @@ a2ensite dokuwiki.conf
 systemctl reload apache2
 ```
 
-### Verify access to the installer
-#### Create a host (A) record in DNS on the DC.
-guide - https://www.server-world.info/en/note?os=Windows_Server_2012&p=dns&f=4
+### Verify access to the installer  
+#### Create a host (A) record in DNS on the DC.  
+guide - https://www.server-world.info/en/note?os=Windows_Server_2012&p=dns&f=4  
 
 Log onto the DC.  
 Open DNS Manager.  
@@ -740,7 +742,9 @@ From win10, open the dokuwiki installer url in the browser:
 ```
 http://www.widgets.localdomain/install.php
 ```
+
 <img width="1086" alt="DokuWiki_Installer" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/50bf21a3-a127-490a-9c18-05fae97d8efe">
+
 ```
 wiki name = Widgets Network Documentation Wiki
 superuser = wikiadmin
@@ -749,12 +753,14 @@ e-mail = wikiadmin@widgets.localdomain
 password = Passw0rd!
 initial ACL policy = Public Wiki
 ```
+
 <img width="1105" alt="DokuWiki_setup" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/10605e55-b5b3-45a3-aacd-c767c42b3f86">
 
 ### Rename the install file on www
 ```
 mv /var/www/html/dokuwiki/install.php /var/www/html/dokuwiki/install.php.removed
 ```
+
 <img width="1102" alt="Screenshot 2023-11-28 at 12 46 29 PM" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/756309b6-5e47-4bbb-ad30-96b918902827">
 
 ### Login to the Wiki  
@@ -820,11 +826,11 @@ FQDN = iis.widgets.localdomain (needs to be created on dc)
 a-record created = not yet
 ```
 
-Create these host (A) records on the DC just like you did for www.widgets.localdomain.
-Note: Remember to uncheck create PTR record.
-Once you have created the record, update your notes on the wiki.
+Create these host (A) records on the DC just like you did for www.widgets.localdomain.  
+Note: Remember to uncheck create PTR record.  
+Once you have created the record, update your notes on the wiki.  
 
-### Open the firewall GUI on Win10
+### Open the firewall GUI on Win10  
 Create a VIP (Virtual IP) on the firewall.  
 
 <img width="962" alt="Create VIP" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/add73911-4c68-4fad-a401-c84e1e4a4fad">
