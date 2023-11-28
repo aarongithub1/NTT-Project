@@ -919,13 +919,28 @@ Join to the widgets domain.
 
 ![FTP_roles_features](https://github.com/aarongithub1/NTT-Project/assets/31551830/06f59a4e-9a26-4344-85c6-fed38170267a)
 
-Create FTP folder on local Drive.
+### Create FTP folder on local Drive.
+
 ![FTP_create_FTP_folder_local disk](https://github.com/aarongithub1/NTT-Project/assets/31551830/8d1135a5-d5d3-4abf-84a6-bdfaf7931399)
 
-Open IIS
+### Open IIS
+
 ![FTP_Tools_IIS](https://github.com/aarongithub1/NTT-Project/assets/31551830/2202c724-5278-41e3-a795-5d52e81fca58)
 
-Create FTP site (Right click FTP Server)
+### Create FTP site (Right click FTP Server)
+
 ![FTP_Add_FTP_site](https://github.com/aarongithub1/NTT-Project/assets/31551830/f08804f6-1250-4f1a-adcb-ec01ac1934de)
 
+### Name the FTP site (ftp) and give it the path to your FTP File on your local drive. (click Next)
+
+![FTP_path_to_FTP_folder](https://github.com/aarongithub1/NTT-Project/assets/31551830/2c4c203d-3dee-4827-9226-82a57acf2369)
+
+
+### Select Basic, Specify roles or user groups, "FTPUsers" (created on the DC), read and write. 
+
+![FTP_basic_roles_groups_read_write](https://github.com/aarongithub1/NTT-Project/assets/31551830/f9483176-7993-4747-adbc-5f82d9362070)
+
+### No SSL
+
+![FTP_no_SSL](https://github.com/aarongithub1/NTT-Project/assets/31551830/67d5bd2d-7bd1-4729-93ed-81b382a9e1d6)
 
