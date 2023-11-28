@@ -2,6 +2,8 @@
 
 ### This is a project where I built a small network
 
+---
+
 # Stage 1 (Network Setup)
 
 ## In GNS3 - Drag network equipment into the project area and connect all the devices
@@ -331,7 +333,6 @@ WAN-to-DMZ policy
 
 ---
 
-
 # Stage 2 (Domain Setup)
 
 ## Prepare a Win2012r2 server
@@ -501,15 +502,12 @@ c:\windows\web\wallpaper\windows\img0.jpg
 
 ---
 
-# Stage 3
-
-
-   
-### Add new devices to the lab workspace, and link them up
+# Stage 3 (IIS Setup)    
+### Add new devices to the lab workspace, and link them up  
 
 ![IIS_Topology](https://github.com/aarongithub1/NTT-Project/assets/31551830/e56ce06a-48d4-4cb4-ac53-f977769200e2)
 
-### Prepare a Win2012r2 server to join the domain
+### Prepare a Win2012r2 server to join the domain  
 ```
 hostname: iis
 ```
@@ -610,10 +608,11 @@ http://iis.widgets.localdomain/test.html
 
 ![Test_Page_on_WIN10](https://github.com/aarongithub1/NTT-Project/assets/31551830/e95627cd-7b8a-409b-8111-829f17ea4f51)
 
+---
 
-## Setup a LAMP server on an Ubutu Machine
+# Stage 4 (Setup a LAMP server on an Ubutu Machine)  
 
-### Add new devices to the lab workspace, and link them up
+### Add new devices to the lab workspace, and link them up  
 
 ![Screenshot 2023-11-16 at 9 25 27 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/ad785e2d-5dbc-48b7-aa0a-16aa78ecbc51)
 
@@ -873,7 +872,60 @@ ex. http://10.21.1.100
 
 <img width="1033" alt="DokuWiki_access_wan-IP" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/a5352da2-b668-4ea7-93e4-01629d476f08">
 
-## FTP Setup : Topology
+---
+
+# Stage 5 (FTP Setup)  
+
+## Topology
 
 ![Screenshot 2023-11-16 at 10 33 38 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/673a006b-d965-4fcb-b71d-30577482d88a)
+
+## Prepare a Win2012r2 server
+
+```
+Notes: Setup a win2012r2 server as a FTP host. Start like the IIS server. Give it 10.128.10.21 as a static IP. Set the dc IP as primary DNS, and the firewall DMZ IP as secondary DNS. Sync NTP with dc.widgets.localdomain. Change the hostname to ftp. Then join the server to the widgets domain.
+```
+```
+hostname: ftp
+ip address: 10.128.10.21
+subnet mask: 255.255.255.0
+default gateway: 10.128.10.1
+
+DNS1: 10.128.0.10
+DNS2: 10.128.10.1
+```
+```
+NTP sync with: dc.widgets.localdomain
+```
+```
+Join to the widgets domain.
+```
+
+![FTP_static_ip](https://github.com/aarongithub1/NTT-Project/assets/31551830/c7237cff-1739-42c6-9a8e-38fcd82f64a5)
+
+![FTP_hostname_domain](https://github.com/aarongithub1/NTT-Project/assets/31551830/c739bff7-2d9a-4a76-83e8-33a6f6f2c136)
+
+![FTP_Join_domain](https://github.com/aarongithub1/NTT-Project/assets/31551830/7d137250-3125-4c8f-bee1-2c321ba356c0)
+
+![FTP_NTP](https://github.com/aarongithub1/NTT-Project/assets/31551830/c192bcbe-9cbf-4998-b881-429f0147085f)
+
+<img width="1278" alt="Screenshot 2023-11-28 at 2 26 18 PM" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/8058fa69-e99d-445a-a384-35cf62f504ce">
+
+<img width="991" alt="Screenshot 2023-11-28 at 2 27 49 PM" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/13277b1b-5ad9-41ee-a2ea-fdc52868ae18">
+
+<img width="1122" alt="Screenshot 2023-11-28 at 2 29 24 PM" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/acc63d6c-1e38-4201-8109-167294a20ecb">
+
+<img width="1129" alt="Screenshot 2023-11-28 at 2 30 28 PM" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/2034e333-27ca-4786-a731-4218ff28b3f6">
+
+![FTP_roles_features](https://github.com/aarongithub1/NTT-Project/assets/31551830/06f59a4e-9a26-4344-85c6-fed38170267a)
+
+Create FTP folder on local Drive.
+![FTP_create_FTP_folder_local disk](https://github.com/aarongithub1/NTT-Project/assets/31551830/8d1135a5-d5d3-4abf-84a6-bdfaf7931399)
+
+Open IIS
+![FTP_Tools_IIS](https://github.com/aarongithub1/NTT-Project/assets/31551830/2202c724-5278-41e3-a795-5d52e81fca58)
+
+Create FTP site (Right click FTP Server)
+![FTP_Add_FTP_site](https://github.com/aarongithub1/NTT-Project/assets/31551830/f08804f6-1250-4f1a-adcb-ec01ac1934de)
+
 
