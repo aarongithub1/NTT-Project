@@ -711,7 +711,9 @@ Add the following, keep the tabbed spacing.
 
 <img width="895" alt="LAMP_dokuwiki_config" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/26545d4c-1c1c-46cf-b7f1-2d0e50664545">
 
+```
 save (ctrl+S) exit (ctrl+X)  
+```
 
 Finish the config.  
 ```
@@ -834,4 +836,44 @@ Once you have created the record, update your notes on the wiki.
 Create a VIP (Virtual IP) on the firewall.  
 
 <img width="962" alt="Create VIP" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/add73911-4c68-4fad-a401-c84e1e4a4fad">
+
+```
+name = www_tcp_80
+interface = WAN
+mapped IP = 10.128.10.80
+port forwarding = enabled
+external service port = 80
+map to port = 80
+```
+
+<img width="1088" alt="VIP_step2" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/e0cf49f5-748e-4f8d-9470-4f052d64d7b5">
+
+### Edit the WAN-to-DMZ firewall policy
+```
+destination = www_tcp_80
+```
+
+<img width="991" alt="WAN-to-DMZ" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/81d43bdc-7a98-432f-8c8b-7f37c3eb2778">
+
+<img width="1034" alt="WAN-to-DMZ_dest" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/e53681a0-6042-4f72-b86e-4e60226110c2">
+
+Find the WAN IP of the firewall  
+Note: This is a dynamic IP, so it may change from time to time.  
+```
+show sys int (then hold the shift key and press the '?' key)
+```
+
+<img width="863" alt="Fortigate_interface_IP" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/75e9abd3-57eb-4252-8064-db80e1414256">
+
+Access the wiki from the webbrowser on your home computer  
+```
+http://wan-ip-of-firewall/
+ex. http://10.21.1.100
+```
+
+<img width="1033" alt="DokuWiki_access_wan-IP" src="https://github.com/aarongithub1/NTT-Project/assets/31551830/a5352da2-b668-4ea7-93e4-01629d476f08">
+
+## FTP Setup : Topology
+
+![Screenshot 2023-11-16 at 10 33 38 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/673a006b-d965-4fcb-b71d-30577482d88a)
 
