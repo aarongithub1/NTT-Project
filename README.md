@@ -1001,6 +1001,23 @@ Join to the widgets domain.
 ![FTP_access from win10workstation](https://github.com/aarongithub1/NTT-Project/assets/31551830/93cf2e95-3482-4f21-9d66-9140a72fc05c)
 
 ---
+# Hardening The Environment
+## Research Hardening techniques and create Wiki pages in the DokuWiki
+
+![Screenshot 2023-11-29 at 9 44 19 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/4d26dcbd-a5a3-4d52-861a-c8eefaef6f5d)
+
+---
+
+# Vulnerability Scan
+## Document the vulnerabilities and create Wiki pages in DokuWiki
+
+![Vuln Scan](https://github.com/aarongithub1/NTT-Project/assets/31551830/a16811cb-e924-4374-b0df-81b9a897bdd8)
+
+![Screenshot 2023-11-29 at 9 41 48 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/31b16061-0aab-48a6-8562-2bd8fc239092)
+
+![Screenshot 2023-11-29 at 9 45 17 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/8d7108e2-4d7c-49ea-8f64-6d49fd7afd5d)
+
+---
 
 # Completed Project Topology
 
