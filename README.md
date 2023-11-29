@@ -1000,3 +1000,9 @@ Join to the widgets domain.
 
 ![FTP_access from win10workstation](https://github.com/aarongithub1/NTT-Project/assets/31551830/93cf2e95-3482-4f21-9d66-9140a72fc05c)
 
+---
+
+# Completed Project Topology
+
+![GNS3_Final_Topology](https://github.com/aarongithub1/NTT-Project/assets/31551830/e2eab675-7346-4ecf-89ad-fab70c90360e)
+
