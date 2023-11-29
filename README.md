@@ -1,9 +1,7 @@
 # Network Tools and Technologies Project
 
 ### This is a project where I built a small network
-
 ---
-
 # Stage 1 (Network Setup)
 
 ## In GNS3 - Drag network equipment into the project area and connect all the devices
@@ -333,7 +331,7 @@ WAN-to-DMZ policy
 
 ---
 
-# Stage 2 (Domain Setup)
+# Stage 2 (Domain Setup configure Domain Controller)
 
 ## Prepare a Win2012r2 server
 
@@ -502,7 +500,7 @@ c:\windows\web\wallpaper\windows\img0.jpg
 
 ---
 
-# Stage 3 (IIS Setup)    
+# Stage 3 (IIS Setup create sample website)    
 ### Add new devices to the lab workspace, and link them up  
 
 ![IIS_Topology](https://github.com/aarongithub1/NTT-Project/assets/31551830/e56ce06a-48d4-4cb4-ac53-f977769200e2)
@@ -610,7 +608,7 @@ http://iis.widgets.localdomain/test.html
 
 ---
 
-# Stage 4 (Setup a LAMP server on an Ubutu Machine)  
+# Stage 4 (Setup a LAMP server on an Ubutu Machine and set up DokuWiki)  
 
 ### Add new devices to the lab workspace, and link them up  
 
@@ -1001,14 +999,14 @@ Join to the widgets domain.
 ![FTP_access from win10workstation](https://github.com/aarongithub1/NTT-Project/assets/31551830/93cf2e95-3482-4f21-9d66-9140a72fc05c)
 
 ---
-# Hardening The Environment
+# Stage 6 (Hardening The Environment)
 ## Research Hardening techniques and create Wiki pages in the DokuWiki
 
 ![Screenshot 2023-11-29 at 9 44 19 AM](https://github.com/aarongithub1/NTT-Project/assets/31551830/4d26dcbd-a5a3-4d52-861a-c8eefaef6f5d)
 
 ---
 
-# Vulnerability Scan
+# Stage 7 (Vulnerability Scan)
 ## Document the vulnerabilities and create Wiki pages in DokuWiki
 
 ![Vuln Scan](https://github.com/aarongithub1/NTT-Project/assets/31551830/a16811cb-e924-4374-b0df-81b9a897bdd8)
